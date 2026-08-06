@@ -39,8 +39,8 @@ The digit product of 16 is 6, which is divisible by 3, making it the smallest nu
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 100.00%)  
-**Memory:** 42 MB (beats 98.95%)  
-**Submitted:** 2026-08-06T01:12:37.228Z  
+**Memory:** 42.7 MB (beats 50.26%)  
+**Submitted:** 2026-08-06T01:12:44.864Z  
 
 ```java
 class Solution {
