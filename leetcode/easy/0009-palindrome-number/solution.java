@@ -10,7 +10,6 @@ class Solution {
             reversedNum = reversedNum * 10 + x % 10;
             x /= 10;
         }
-
         return x == reversedNum || x == reversedNum / 10;
     }
 }
