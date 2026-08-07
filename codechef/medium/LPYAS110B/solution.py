@@ -1,13 +1,10 @@
-# Read input string
-s = input()
 
-vowels = {'a', 'e', 'i', 'o', 'u'}
+n = int(input())
 
-count = 0
-index = 0
+factorial = 1
+current = n
 
-while index < len(s):
-    if s[index] in vowels:
-        count += 1
-    index += 1
-print(count)
+while current > 1:
+    factorial *= current
+    current -= 1
+print(factorial)
