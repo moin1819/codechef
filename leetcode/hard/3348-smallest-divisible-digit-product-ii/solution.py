@@ -1,6 +1,5 @@
 class Solution:
     def smallestNumber(self, num: str, t: int) -> str:
-        # Step 1: Factorize t into prime factors 2, 3, 5, 7
         temp_t = t
         req2 = req3 = req5 = req7 = 0
         
@@ -8,8 +7,6 @@ class Solution:
         while temp_t % 3 == 0: req3 += 1; temp_t //= 3
         while temp_t % 5 == 0: req5 += 1; temp_t //= 5
         while temp_t % 7 == 0: req7 += 1; temp_t //= 7
-
-        # If t has any prime factor > 7, return -1
         if temp_t > 1:
             return "-1"
 
@@ -54,13 +51,9 @@ class Solution:
             pref3[i + 1] = pref3[i] + count_factor(d, 3)
             pref5[i + 1] = pref5[i] + count_factor(d, 5)
             pref7[i + 1] = pref7[i] + count_factor(d, 7)
-
-        # Case 1: 'num' itself is valid
         if first_zero == n and (pref2[n] >= req2 and pref3[n] >= req3 and 
                                 pref5[n] >= req5 and pref7[n] >= req7):
             return num
-
-        # Case 2: Try changing a digit at index i to a larger digit d
         for i in range(min(n - 1, first_zero), -1, -1):
             start_digit = int(num[i]) + 1
 
@@ -80,8 +73,6 @@ class Solution:
 
                 if len(suf) <= rem_len:
                     return num[:i] + str(d) + ('1' * (rem_len - len(suf))) + suf
-
-        # Case 3: Need a longer string length
         suf = min_suffix(req2, req3, req5, req7)
         target_len = max(n + 1, len(suf))
         return ('1' * (target_len - len(suf))) + suf
