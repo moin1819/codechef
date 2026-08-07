@@ -48,9 +48,9 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 4 ms (beats 100.00%)  
-**Memory:** 45.9 MB (beats 53.68%)  
-**Submitted:** 2026-08-07T14:08:01.268Z  
+**Runtime:** 5 ms (beats 81.26%)  
+**Memory:** 46 MB (beats 53.68%)  
+**Submitted:** 2026-08-07T14:08:10.427Z  
 
 ```java
 class Solution {
@@ -65,7 +65,6 @@ class Solution {
             reversedNum = reversedNum * 10 + x % 10;
             x /= 10;
         }
-
         return x == reversedNum || x == reversedNum / 10;
     }
 }
