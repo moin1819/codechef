@@ -73,9 +73,9 @@ There is no valid sequence of indices.
 ## Solution
 
 **Language:** Python  
-**Runtime:** 570 ms (beats 47.83%)  
-**Memory:** 47.4 MB (beats 67.39%)  
-**Submitted:** 2026-08-08T17:31:36.838Z  
+**Runtime:** 578 ms (beats 47.83%)  
+**Memory:** 47.4 MB (beats 65.22%)  
+**Submitted:** 2026-08-08T17:31:51.601Z  
 
 ```py
 class Solution:
