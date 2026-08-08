@@ -73,15 +73,17 @@ There is no valid sequence of indices.
 ## Solution
 
 **Language:** Python  
-**Runtime:** 584 ms (beats 47.83%)  
-**Memory:** 47.3 MB (beats 69.57%)  
-**Submitted:** 2026-08-08T17:33:04.839Z  
+**Runtime:** 559 ms (beats 47.83%)  
+**Memory:** 47.2 MB (beats 71.74%)  
+**Submitted:** 2026-08-08T17:32:08.234Z  
 
 ```py
 class Solution:
     def validSequence(self, word1: str, word2: str) -> list[int]:
         n1, n2 = len(word1), len(word2)
-    
+        
+        # suffix[j] stores the largest index in word1 from which 
+        # word2[j:] can be matched EXACTLY as a subsequence.
         suffix = [-1] * n2
         p1 = n1 - 1
         for j in range(n2 - 1, -1, -1):
