@@ -4,30 +4,14 @@
 
 ## Problem
 
-### Find the number of digits
-
-Given an integer  **N**, Calculate and print the number of digits present in  **N**.
-
-### Constraints
-- $1 \leq N \leq 10^8$
-### Sample 1:
-Input
-Output
-
-```
-1543
-```
-
-```
-4
-```
+_Description not available._
 
 ## Solution
 
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-09T04:23:01.074Z  
+**Submitted:** 2026-08-09T04:22:42.968Z  
 
 ```c_cpp
 #include <iostream>
@@ -37,15 +21,15 @@ int main() {
     int N;
     cin >> N;
     
-    int count = 0;
-    int temp = N;
+    long long factorial = 1;
+    int i = 1;
     
-    while (temp > 0) {
-        count++;
-        temp /= 10; // Remove the last digit
-    }
+    do {
+        factorial *= i;
+        i++;
+    } while (i <= N);
     
-    cout << count << endl;
+    cout << factorial << endl;
     
     return 0;
 }
