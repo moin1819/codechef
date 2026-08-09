@@ -45,9 +45,9 @@ So we return 10 since it's larger.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 2 ms (beats 97.07%)  
-**Memory:** 11.1 MB (beats 91.02%)  
-**Submitted:** 2026-08-09T04:36:48.575Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 11 MB (beats 97.16%)  
+**Submitted:** 2026-08-09T04:37:03.229Z  
 
 ```cpp
 #include <vector>
