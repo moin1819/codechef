@@ -2,18 +2,20 @@
 using namespace std;
 
 int main() {
-    int N;
+    long long N;
     cin >> N;
     
-    int count = 0;
-    int temp = N;
+    long long sum = 0;
+    long long product = 1;
     
-    while (temp > 0) {
-        count++;
-        temp /= 10; // Remove the last digit
+    while (N > 0) {
+        int digit = N % 10; 
+        sum += digit;
+        product *= digit;
+        N /= 10;            
     }
     
-    cout << count << endl;
+    cout << sum << " " << product << endl;
     
     return 0;
 }
