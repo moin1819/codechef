@@ -4,14 +4,28 @@
 
 ## Problem
 
-_Description not available._
+### Print factorial
+
+Write a program that uses a do-while loop to find the factorial of a given number.
+
+### Sample 1:
+Input
+Output
+
+```
+5
+```
+
+```
+120
+```
 
 ## Solution
 
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-09T04:22:15.973Z  
+**Submitted:** 2026-08-09T04:22:41.321Z  
 
 ```c_cpp
 #include <iostream>
@@ -21,11 +35,15 @@ int main() {
     int N;
     cin >> N;
     
+    long long factorial = 1;
     int i = 1;
-    while (i <= N) {
-        cout << (i * i) << " ";
+    
+    do {
+        factorial *= i;
         i++;
-    }
+    } while (i <= N);
+    
+    cout << factorial << endl;
     
     return 0;
 }
