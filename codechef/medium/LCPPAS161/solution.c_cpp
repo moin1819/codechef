@@ -5,15 +5,15 @@ int main() {
     int N;
     cin >> N;
     
-    int count = 0;
-    int temp = N;
+    long long factorial = 1;
+    int i = 1;
     
-    while (temp > 0) {
-        count++;
-        temp /= 10; // Remove the last digit
-    }
+    do {
+        factorial *= i;
+        i++;
+    } while (i <= N);
     
-    cout << count << endl;
+    cout << factorial << endl;
     
     return 0;
 }
