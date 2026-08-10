@@ -53,7 +53,7 @@ product of digits = 2  *2*  2 = 8
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-09T04:23:52.184Z  
+**Submitted:** 2026-08-10T08:19:24.366Z  
 
 ```c_cpp
 #include <iostream>
