@@ -50,8 +50,8 @@ Explanation: n is already a perfect square, Alice can win with one move, removin
 
 **Language:** Java  
 **Runtime:** 15 ms (beats 64.49%)  
-**Memory:** 42.5 MB (beats 78.33%)  
-**Submitted:** 2026-08-10T04:48:30.080Z  
+**Memory:** 42.1 MB (beats 97.91%)  
+**Submitted:** 2026-08-10T04:48:35.583Z  
 
 ```java
 class Solution {
