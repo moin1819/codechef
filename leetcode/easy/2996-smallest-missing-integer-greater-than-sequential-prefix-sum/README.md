@@ -40,9 +40,9 @@ Explanation: The longest sequential prefix of nums is [3,4,5] with a sum of 12. 
 ## Solution
 
 **Language:** Java  
-**Runtime:** 2 ms (beats 52.86%)  
-**Memory:** 43.7 MB (beats 96.23%)  
-**Submitted:** 2026-08-11T08:46:44.397Z  
+**Runtime:** 1 ms (beats 93.72%)  
+**Memory:** 44.2 MB (beats 34.73%)  
+**Submitted:** 2026-08-11T08:47:06.202Z  
 
 ```java
 import java.util.HashSet;
