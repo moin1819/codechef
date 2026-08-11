@@ -56,35 +56,29 @@ YES
 
 ## Solution
 
-**Language:** Python  
+**Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-08T16:40:43.048Z  
+**Submitted:** 2026-08-11T08:41:22.425Z  
 
-```py
-import sys
+```c_cpp
+#include <iostream>
+using namespace std;
 
-def main():
-    input_data = sys.stdin.read().split()
-    if not input_data:
-        return
-    
-    T = int(input_data[0])
-    idx = 1
-    
-    for _ in range(T):
-        X = int(input_data[idx])
-        Y = int(input_data[idx + 1])
-        idx += 2
-        
-        # Check if the sum is strictly greater than 6
-        if X + Y > 6:
-            print("YES")
-        else:
-            print("NO")
-
-if __name__ == '__main__':
-    main()
+int main() {
+    int t;
+    cin >> t;
+    while(t--) {
+        int x, y;
+        cin >> x >> y;
+        if (x + y > 6) {
+            cout << "YES\n";
+        } else {
+            cout << "NO\n";
+        }
+    }
+    return 0;
+}
 ```
 
 ---
