@@ -54,14 +54,13 @@ YES
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-11T08:43:42.932Z  
+**Submitted:** 2026-08-11T08:44:01.353Z  
 
 ```c_cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    // Fast I/O
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     
@@ -70,8 +69,6 @@ int main() {
     while(t--) {
         int x;
         cin >> x;
-        
-        // Check if Chef drank at least 2000 ml of water
         if (x >= 2000) {
             cout << "YES\n";
         } else {
