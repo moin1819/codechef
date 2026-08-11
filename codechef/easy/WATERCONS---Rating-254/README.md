@@ -51,32 +51,35 @@ YES
 
 ## Solution
 
-**Language:** Python  
+**Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-08T16:42:00.385Z  
+**Submitted:** 2026-08-11T08:43:42.932Z  
 
-```py
-import sys
+```c_cpp
+#include <iostream>
+using namespace std;
 
-def main():
-    input_data = sys.stdin.read().split()
-    if not input_data:
-        return
+int main() {
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
     
-    T = int(input_data[0])
-    
-    for i in range(1, T + 1):
-        X = int(input_data[i])
+    int t;
+    cin >> t;
+    while(t--) {
+        int x;
+        cin >> x;
         
-        # Check if Chef drank at least 2000 ml
-        if X >= 2000:
-            print("YES")
-        else:
-            print("NO")
-
-if __name__ == '__main__':
-    main()
+        // Check if Chef drank at least 2000 ml of water
+        if (x >= 2000) {
+            cout << "YES\n";
+        } else {
+            cout << "NO\n";
+        }
+    }
+    return 0;
+}
 ```
 
 ---
