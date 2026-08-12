@@ -58,8 +58,8 @@ It can be shown that there are no good subarrays with length more than 4.
 
 **Language:** Java  
 **Runtime:** 66 ms (beats 74.64%)  
-**Memory:** 101.2 MB (beats 25.69%)  
-**Submitted:** 2026-08-12T05:55:27.794Z  
+**Memory:** 101.5 MB (beats 19.25%)  
+**Submitted:** 2026-08-12T05:56:05.302Z  
 
 ```java
 import java.util.*;
