@@ -69,17 +69,54 @@ One sequence of $3$ operations is as follows:
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T15:00:07.266Z  
+**Submitted:** 2026-08-12T15:00:49.194Z  
 
 ```c_cpp
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
 using namespace std;
 
-int main() {
-	// your code goes here
-
+void solve() {
+    int N, K;
+    cin >> N >> K;
+    
+    vector<long long> A(N);
+    for (int i = 0; i < N; ++i) {
+        cin >> A[i];
+    }
+    
+    sort(A.begin(), A.end());
+    
+    long long S = 0; // Total increments required
+    long long M = 0; // Max increment for a single element
+    
+    long long last_val = A[0];
+    for (int i = 1; i < N; ++i) {
+        long long target = max(A[i], last_val + 1);
+        long long diff = target - A[i];
+        S += diff;
+        M = max(M, diff);
+        last_val = target;
+    }
+    
+    long long ops = max(M, (S + K - 1) / K);
+    cout << ops << "\n";
 }
 
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    
+    int T;
+    cin >> T;
+    while (T--) {
+        solve();
+    }
+    
+    return 0;
+}
 ```
 
 ---
