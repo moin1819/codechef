@@ -71,20 +71,34 @@ It's optimal to enter from the back, and walk through rows $6, 5, 4$ to reach it
 
 ## Solution
 
-**Language:** c_cpp  
+**Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T14:54:00.310Z  
+**Submitted:** 2026-08-12T14:55:28.121Z  
 
-```c_cpp
-#include <bits/stdc++.h>
-using namespace std;
+```java
+import java.util.Scanner;
 
-int main() {
-	// your code goes here
-
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        if (sc.hasNextInt()) {
+            int T = sc.nextInt();
+            while (T-- > 0) {
+                int N = sc.nextInt();
+                int M = sc.nextInt();
+                int X = sc.nextInt();
+                
+                int R = (X + M - 1) / M;
+                int frontDistance = R;
+                int backDistance = N - R + 1;
+                
+                System.out.println(Math.min(frontDistance, backDistance));
+            }
+        }
+        sc.close();
+    }
 }
-
 ```
 
 ---
