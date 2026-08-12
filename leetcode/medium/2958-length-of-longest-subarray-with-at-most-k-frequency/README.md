@@ -57,9 +57,9 @@ It can be shown that there are no good subarrays with length more than 4.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 69 ms (beats 43.18%)  
-**Memory:** 101 MB (beats 29.20%)  
-**Submitted:** 2026-08-12T05:55:41.990Z  
+**Runtime:** 68 ms (beats 50.38%)  
+**Memory:** 101.1 MB (beats 29.04%)  
+**Submitted:** 2026-08-12T05:55:50.389Z  
 
 ```java
 import java.util.*;
