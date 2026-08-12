@@ -69,14 +69,44 @@ Keep any one copy; the final string is $01$ which is optimal.
 
 ## Solution
 
-**Language:** Python  
+**Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T14:59:12.511Z  
+**Submitted:** 2026-08-12T14:59:48.643Z  
 
-```py
-# cook your dish here
+```c_cpp
+#include <iostream>
+#include <string>
+#include <vector>
 
+using namespace std;
+
+void solve() {
+    int N;
+    cin >> N;
+    string S;
+    cin >> S;
+
+    // Check if "01" is a substring of S
+    if (S.find("01") != string::npos) {
+        cout << "01\n";
+    } else {
+        cout << S << "\n";
+    }
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    int T;
+    cin >> T;
+    while (T--) {
+        solve();
+    }
+
+    return 0;
+}
 ```
 
 ---
