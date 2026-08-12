@@ -85,25 +85,25 @@ $6$ is even, so the answer is `Yes`.
 
 ## Solution
 
-**Language:** Java  
+**Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T14:52:26.288Z  
+**Submitted:** 2026-08-12T14:53:39.358Z  
 
-```java
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+```c_cpp
+#include <iostream>
+using namespace std;
+int main() {
+    int L, R;
+    cin >> L >> R;
+    if (L != R || L % 2 == 0) {
+        cout << "Yes" << endl;
+    } else {
+        cout << "No" << endl;
+    }
 
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		// your code goes here
-
-	}
+    return 0;
 }
-
 ```
 
 ---
