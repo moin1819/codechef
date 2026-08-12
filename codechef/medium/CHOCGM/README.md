@@ -73,44 +73,36 @@ Bob can thus eat all the chocolates without ever giving Alice a turn - so Alice 
 
 ## Solution
 
-**Language:** Java  
+**Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T14:57:19.897Z  
+**Submitted:** 2026-08-12T14:58:37.163Z  
 
-```java
-import java.util.Scanner;
+```py
+# cook your dish here
+def solve():
+    N = int(input())
+    A = list(map(int, input().split()))
+    
+    total_sum = sum(A)
+    
+    # If the sum is odd, Bob takes everything
+    if total_sum % 2 != 0:
+        print(0)
+        return
+    
+    # If the sum is even, Alice takes all even components + 1 extra
+    alice_chocolates = 0
+    for x in A:
+        # Subtract 1 if x is odd to get the maximum even component
+        alice_chocolates += x - (x % 2)
+        
+    alice_chocolates += 1
+    print(alice_chocolates)
 
-public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        if (sc.hasNextInt()) {
-            int T = sc.nextInt();
-            while (T-- > 0) {
-                int N = sc.nextInt();
-                long[] A = new long[N];
-                long totalSum = 0;
-
-                for (int i = 0; i < N; i++) {
-                    A[i] = sc.nextLong();
-                    totalSum += A[i];
-                }
-
-                if (totalSum % 2 != 0) {
-                    System.out.println(0);
-                } else {
-                    long aliceChocolates = 0;
-                    for (int i = 0; i < N; i++) {
-                        aliceChocolates += A[i] - (A[i] % 2);
-                    }
-                    aliceChocolates += 1;
-                    System.out.println(aliceChocolates);
-                }
-            }
-        }
-        sc.close();
-    }
-}
+T = int(input())
+for _ in range(T):
+    solve()
 ```
 
 ---
