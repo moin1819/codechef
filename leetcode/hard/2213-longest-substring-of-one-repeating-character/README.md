@@ -52,9 +52,9 @@ Thus, we return [2,3].
 ## Solution
 
 **Language:** Java  
-**Runtime:** 93 ms (beats 84.38%)  
-**Memory:** 114.5 MB (beats 57.81%)  
-**Submitted:** 2026-08-13T08:40:26.572Z  
+**Runtime:** 91 ms (beats 89.06%)  
+**Memory:** 114.3 MB (beats 57.81%)  
+**Submitted:** 2026-08-13T08:40:38.457Z  
 
 ```java
 class Solution {
