@@ -39,12 +39,11 @@ The following substring has a length of 2 and contains at most two occurrences o
 
 **Language:** C  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 9.1 MB (beats 87.50%)  
-**Submitted:** 2026-08-14T06:17:52.236Z  
+**Memory:** 9.3 MB (beats 40.00%)  
+**Submitted:** 2026-08-14T09:46:43.781Z  
 
 ```c
 #include <string.h>
-
 int maximumLengthSubstring(char* s) {
     int counts[26] = {0};
     int left = 0;
@@ -52,16 +51,13 @@ int maximumLengthSubstring(char* s) {
     int len = strlen(s);
 
     for (int right = 0; right < len; right++) {
-        // Add the current character to the window count
         counts[s[right] - 'a']++;
 
-        // Shrink the window from the left if any count exceeds 2
         while (counts[s[right] - 'a'] > 2) {
             counts[s[left] - 'a']--;
             left++;
         }
 
-        // Update max length
         int curr_len = right - left + 1;
         if (curr_len > max_len) {
             max_len = curr_len;
