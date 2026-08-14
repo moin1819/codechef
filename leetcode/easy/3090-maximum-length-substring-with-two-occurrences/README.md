@@ -39,8 +39,8 @@ The following substring has a length of 2 and contains at most two occurrences o
 
 **Language:** C  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 9.3 MB (beats 40.00%)  
-**Submitted:** 2026-08-14T09:46:43.781Z  
+**Memory:** 9.2 MB (beats 57.50%)  
+**Submitted:** 2026-08-14T09:47:45.259Z  
 
 ```c
 #include <string.h>
