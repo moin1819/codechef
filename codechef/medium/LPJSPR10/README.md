@@ -27,7 +27,7 @@ Learn Coding on CodeChef
 **Language:** JavaScript  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-13T08:38:16.709Z  
+**Submitted:** 2026-08-14T06:06:36.039Z  
 
 ```js
 console.log("Learn Coding on CodeChef");
