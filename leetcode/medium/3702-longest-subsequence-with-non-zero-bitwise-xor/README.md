@@ -42,7 +42,7 @@ The longest subsequence is `[2, 3, 4]`. The bitwise XOR is computed as `2 XOR 3 
 **Language:** Java  
 **Runtime:** 2 ms (beats 68.38%)  
 **Memory:** 133.3 MB (beats 88.24%)  
-**Submitted:** 2026-08-15T12:03:30.795Z  
+**Submitted:** 2026-08-15T12:03:51.094Z  
 
 ```java
 class Solution {
