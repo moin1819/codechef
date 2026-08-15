@@ -59,7 +59,7 @@ Fun fact: `29/02/2024` (read as `DD/MM/YYYY`) is a leap year day.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-15T11:43:22.303Z  
+**Submitted:** 2026-08-15T11:43:41.649Z  
 
 ```java
 import java.util.Scanner;
