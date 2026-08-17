@@ -1,4 +1,5 @@
-SELECT DISTINCT author_id, author_name, publication_name
-FROM Views
-WHERE view_count = 0
-ORDER BY author_id ASC;
+SELECT DISTINCT p.player_name, p.score
+FROM Players p
+JOIN Matches m ON p.player_name = m.winner
+ORDER BY p.score DESC
+LIMIT 3;
