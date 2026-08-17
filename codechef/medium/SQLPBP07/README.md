@@ -28,7 +28,7 @@ book_id	title	author	published_year	rating
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T14:44:48.709Z  
+**Submitted:** 2026-08-17T14:44:52.920Z  
 
 ```sql
 SELECT book_id, title, author, published_year
