@@ -1,3 +1,3 @@
-SELECT Movie_name 
-FROM Cinema 
-WHERE Rating > 7 AND Rating < 9;
+SELECT COUNT(*) AS fiction_count 
+FROM Books 
+WHERE genre = 'Fiction';
