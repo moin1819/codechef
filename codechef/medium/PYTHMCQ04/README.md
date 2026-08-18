@@ -20,7 +20,7 @@ Notice that this is using a comma to print text.
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-18T18:22:03.509Z  
+**Submitted:** 2026-08-18T18:22:06.157Z  
 
 ```cpp
 print(11 * 13)
