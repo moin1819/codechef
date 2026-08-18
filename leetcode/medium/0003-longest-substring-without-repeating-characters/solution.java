@@ -2,7 +2,6 @@ import java.util.HashMap;
 
 class Solution {
     public int lengthOfLongestSubstring(String s) {
-        // Map to store the last seen index of each character
         HashMap<Character, Integer> lastSeen = new HashMap<>();
         
         int left = 0;
