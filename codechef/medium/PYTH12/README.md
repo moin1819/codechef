@@ -1,0 +1,56 @@
+# PYTH12
+
+![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
+
+## Problem
+
+### Inserting text Between Outputs
+
+Listen
+
+Introducing Listen to Problem✨
+
+Don't want to read? Now you can listen to the problem!
+
+Remember that to print multiple values on same line, we have to use comma inside print statement.
+
+We can also combine text and numbers in a single print statement by comma separating them.
+
+For example, check the below code:
+
+```
+print("My favorite number is", 10)
+
+```
+
+The code will output:
+
+```
+My favorite number is 10
+
+```
+
+### Task
+- You have to output the text:
+
+```
+7 plus 3 equals 10
+
+```
+
+- Replace the underscores in the editor to get the above output.
+
+## Solution
+
+**Language:** Python  
+**Runtime:** N/A  
+**Memory:** N/A  
+**Submitted:** 2026-08-18T18:23:01.197Z  
+
+```py
+print("7 plus 3 equals", 7 + 3)
+```
+
+---
+
+[View on CodeChef](https://www.codechef.com/problems/PYTH12)
