@@ -13,7 +13,7 @@ How do we print output on separate lines in Python?
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-18T18:21:52.234Z  
+**Submitted:** 2026-08-18T18:21:54.956Z  
 
 ```cpp
 print(11 * 13)
