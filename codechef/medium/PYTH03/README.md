@@ -4,17 +4,41 @@
 
 ## Problem
 
-_Description not available._
+### Printing text
+
+Listen
+
+Introducing Listen to Problem✨
+
+Don't want to read? Now you can listen to the problem!
+
+In the last problem, we saw how to print a number (using `print`).
+
+Now let's see how to output some text.
+To print text, there is only one difference. All textual content should start and end with either double quotes(**" "**) or single quotes(**' '**).
+
+For eg -
+
+```
+print("I love Python") # Output: I love Python
+print('I love Python') # Output: I love Python
+
+```
+
+These two lines perform identical tasks; the first utilizes double quotes, while the second uses single quotes.
+
+### Task
+- Replace the _ (underscores) in the editor with the text I love Python and Submit.
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-18T18:18:47.616Z  
+**Submitted:** 2026-08-18T18:19:20.511Z  
 
 ```py
-print(12)
+print("I love Python")
 ```
 
 ---
