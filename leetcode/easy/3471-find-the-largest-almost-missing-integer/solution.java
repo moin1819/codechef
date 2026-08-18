@@ -7,8 +7,6 @@ class Solution {
     public int largestInteger(int[] nums, int k) {
         int n = nums.length;
         Map<Integer, Integer> subarrayCount = new HashMap<>();
-
-        // Process all subarrays of length k
         for (int i = 0; i <= n - k; i++) {
             Set<Integer> uniqueInSubarray = new HashSet<>();
             for (int j = i; j < i + k; j++) {
