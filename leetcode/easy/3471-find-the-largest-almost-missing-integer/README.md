@@ -67,9 +67,9 @@ There is no integer that appears in only one subarray of size 1.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 7 ms (beats 14.74%)  
-**Memory:** 46.7 MB (beats 9.47%)  
-**Submitted:** 2026-08-18T14:18:18.962Z  
+**Runtime:** 6 ms (beats 37.19%)  
+**Memory:** 46.3 MB (beats 33.33%)  
+**Submitted:** 2026-08-18T14:18:30.708Z  
 
 ```java
 import java.util.HashMap;
@@ -81,8 +81,6 @@ class Solution {
     public int largestInteger(int[] nums, int k) {
         int n = nums.length;
         Map<Integer, Integer> subarrayCount = new HashMap<>();
-
-        // Process all subarrays of length k
         for (int i = 0; i <= n - k; i++) {
             Set<Integer> uniqueInSubarray = new HashSet<>();
             for (int j = i; j < i + k; j++) {
