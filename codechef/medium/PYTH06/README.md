@@ -12,12 +12,12 @@ Which lines of code will output the sum of 7 and 19?
 
 ## Solution
 
-**Language:** C++  
+**Language:** default  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-18T18:20:22.629Z  
+**Submitted:** 2026-08-18T18:20:16.176Z  
 
-```cpp
+```default
 print(21 + 40)
 ```
 
