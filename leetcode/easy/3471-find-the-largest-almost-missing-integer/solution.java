@@ -17,8 +17,6 @@ class Solution {
                 subarrayCount.put(num, subarrayCount.getOrDefault(num, 0) + 1);
             }
         }
-
-        // Find the maximum element that appears in exactly 1 subarray
         int maxVal = -1;
         for (Map.Entry<Integer, Integer> entry : subarrayCount.entrySet()) {
             if (entry.getValue() == 1) {
