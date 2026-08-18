@@ -67,9 +67,9 @@ There is no integer that appears in only one subarray of size 1.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 7 ms (beats 14.74%)  
-**Memory:** 46.7 MB (beats 9.47%)  
-**Submitted:** 2026-08-18T18:23:21.179Z  
+**Runtime:** 6 ms (beats 37.19%)  
+**Memory:** 46.2 MB (beats 40.00%)  
+**Submitted:** 2026-08-18T18:24:14.852Z  
 
 ```java
 import java.util.HashMap;
