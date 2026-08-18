@@ -68,8 +68,8 @@ There is no integer that appears in only one subarray of size 1.
 
 **Language:** Java  
 **Runtime:** 6 ms (beats 37.19%)  
-**Memory:** 46.2 MB (beats 37.89%)  
-**Submitted:** 2026-08-18T16:07:49.729Z  
+**Memory:** 46.5 MB (beats 24.21%)  
+**Submitted:** 2026-08-18T16:07:54.511Z  
 
 ```java
 import java.util.HashMap;
