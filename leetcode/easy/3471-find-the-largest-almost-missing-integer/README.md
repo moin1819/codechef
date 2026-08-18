@@ -68,8 +68,8 @@ There is no integer that appears in only one subarray of size 1.
 
 **Language:** Java  
 **Runtime:** 6 ms (beats 37.19%)  
-**Memory:** 46.3 MB (beats 33.33%)  
-**Submitted:** 2026-08-18T14:18:30.708Z  
+**Memory:** 46.5 MB (beats 17.54%)  
+**Submitted:** 2026-08-18T14:18:38.179Z  
 
 ```java
 import java.util.HashMap;
@@ -91,8 +91,6 @@ class Solution {
                 subarrayCount.put(num, subarrayCount.getOrDefault(num, 0) + 1);
             }
         }
-
-        // Find the maximum element that appears in exactly 1 subarray
         int maxVal = -1;
         for (Map.Entry<Integer, Integer> entry : subarrayCount.entrySet()) {
             if (entry.getValue() == 1) {
