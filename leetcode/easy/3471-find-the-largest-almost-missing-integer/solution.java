@@ -12,7 +12,6 @@ class Solution {
             for (int j = i; j < i + k; j++) {
                 uniqueInSubarray.add(nums[j]);
             }
-            
             for (int num : uniqueInSubarray) {
                 subarrayCount.put(num, subarrayCount.getOrDefault(num, 0) + 1);
             }
