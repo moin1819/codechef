@@ -60,8 +60,8 @@ Output: 4
 
 **Language:** Java  
 **Runtime:** 17 ms (beats 91.32%)  
-**Memory:** 53.4 MB (beats 38.42%)  
-**Submitted:** 2026-08-19T16:37:04.546Z  
+**Memory:** 53.7 MB (beats 27.63%)  
+**Submitted:** 2026-08-19T16:38:16.528Z  
 
 ```java
 import java.util.HashMap;
