@@ -9,8 +9,6 @@ class Solution {
         
         for (int right = 0; right < s.length(); right++) {
             char currentChar = s.charAt(right);
-            
-            // If character was seen and its last index is within the current window
             if (lastSeen.containsKey(currentChar) && lastSeen.get(currentChar) >= left) {
                 left = lastSeen.get(currentChar) + 1;
             }
