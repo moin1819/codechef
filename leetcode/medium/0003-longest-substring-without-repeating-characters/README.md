@@ -47,8 +47,8 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 
 **Language:** Java  
 **Runtime:** 44 ms (beats 29.18%)  
-**Memory:** 47.7 MB (beats 30.40%)  
-**Submitted:** 2026-08-18T18:40:05.359Z  
+**Memory:** 47.8 MB (beats 20.98%)  
+**Submitted:** 2026-08-18T18:40:37.306Z  
 
 ```java
 import java.util.HashMap;
@@ -65,14 +65,9 @@ class Solution {
             if (lastSeen.containsKey(currentChar) && lastSeen.get(currentChar) >= left) {
                 left = lastSeen.get(currentChar) + 1;
             }
-            
-            // Update the last seen index of current character
             lastSeen.put(currentChar, right);
-            
-            // Update maximum length
             maxLen = Math.max(maxLen, right - left + 1);
         }
-        
         return maxLen;
     }
 }
