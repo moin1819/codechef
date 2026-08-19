@@ -12,14 +12,9 @@ class Solution {
             if (lastSeen.containsKey(currentChar) && lastSeen.get(currentChar) >= left) {
                 left = lastSeen.get(currentChar) + 1;
             }
-            
-            // Update the last seen index of current character
             lastSeen.put(currentChar, right);
-            
-            // Update maximum length
             maxLen = Math.max(maxLen, right - left + 1);
         }
-        
         return maxLen;
     }
 }
