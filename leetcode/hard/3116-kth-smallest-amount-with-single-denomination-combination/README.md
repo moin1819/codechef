@@ -47,9 +47,9 @@ All of the coins combined produce: 2, 4, 5, 6, 8, 10,  **12**, 14, 15, etc.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 169 ms (beats 21.57%)  
-**Memory:** 43.5 MB (beats 78.43%)  
-**Submitted:** 2026-08-21T18:33:31.874Z  
+**Runtime:** 173 ms (beats 11.76%)  
+**Memory:** 43.4 MB (beats 94.12%)  
+**Submitted:** 2026-08-21T18:34:25.585Z  
 
 ```java
 class Solution {
