@@ -59,9 +59,9 @@ Output: 4
 ## Solution
 
 **Language:** Java  
-**Runtime:** 18 ms (beats 82.37%)  
-**Memory:** 53.1 MB (beats 43.16%)  
-**Submitted:** 2026-08-19T16:38:48.855Z  
+**Runtime:** 17 ms (beats 91.32%)  
+**Memory:** 53.5 MB (beats 32.63%)  
+**Submitted:** 2026-08-19T16:37:17.920Z  
 
 ```java
 import java.util.HashMap;
