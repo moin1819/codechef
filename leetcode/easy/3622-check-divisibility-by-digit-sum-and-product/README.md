@@ -42,9 +42,9 @@ Since 23 is not divisible by the sum (2 + 3 = 5) plus product (2 * 3 = 6) of its
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms (beats 100.00%)  
+**Runtime:** 1 ms (beats 25.54%)  
 **Memory:** 42.6 MB (beats 24.68%)  
-**Submitted:** 2026-08-22T18:56:58.853Z  
+**Submitted:** 2026-08-22T18:57:05.641Z  
 
 ```java
 class Solution {
