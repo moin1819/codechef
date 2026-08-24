@@ -65,9 +65,9 @@ Bob wins because 9 + 3 + 2 + 9 = 5 + 9 + 2 + 7.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 4 ms (beats 47.55%)  
-**Memory:** 13.8 MB (beats 92.07%)  
-**Submitted:** 2026-08-23T16:31:45.158Z  
+**Runtime:** 3 ms (beats 66.67%)  
+**Memory:** 14.2 MB (beats 10.26%)  
+**Submitted:** 2026-08-23T16:31:54.485Z  
 
 ```cpp
 #include <string>
