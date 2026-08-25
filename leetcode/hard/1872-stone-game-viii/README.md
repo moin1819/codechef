@@ -69,9 +69,9 @@ The difference between their scores is (-22) - 0 = -22.
 ## Solution
 
 **Language:** Python  
-**Runtime:** 686 ms (beats 51.48%)  
-**Memory:** 33.1 MB (beats 63.91%)  
-**Submitted:** 2026-08-24T12:30:50.459Z  
+**Runtime:** 691 ms (beats 45.56%)  
+**Memory:** 33 MB (beats 63.91%)  
+**Submitted:** 2026-08-24T12:30:55.869Z  
 
 ```py
 class Solution:
