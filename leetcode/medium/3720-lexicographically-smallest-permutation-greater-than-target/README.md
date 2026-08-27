@@ -56,8 +56,8 @@ A string `a` is  **lexicographically strictly greater** than a string `b` (of th
 
 **Language:** Java  
 **Runtime:** 5 ms (beats 38.71%)  
-**Memory:** 46.6 MB (beats 25.81%)  
-**Submitted:** 2026-08-27T04:39:16.691Z  
+**Memory:** 46.5 MB (beats 27.42%)  
+**Submitted:** 2026-08-27T16:56:44.691Z  
 
 ```java
 class Solution {
