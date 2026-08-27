@@ -48,7 +48,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-27T04:20:53.640Z  
+**Submitted:** 2026-08-27T04:20:53.353Z  
 
 ```py
 # Accept the number of test cases
