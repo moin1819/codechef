@@ -51,32 +51,21 @@ YES
 
 ## Solution
 
-**Language:** c_cpp  
+**Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-11T08:44:11.326Z  
+**Submitted:** 2026-08-28T17:58:39.827Z  
 
-```c_cpp
-#include <iostream>
-using namespace std;
+```py
+T = int(input())
 
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    
-    int t;
-    cin >> t;
-    while(t--) {
-        int x;
-        cin >> x;
-        if (x >= 2000) {
-            cout << "YES\n";
-        } else {
-            cout << "NO\n";
-        }
-    }
-    return 0;
-}
+for _ in range(T):
+    X = int(input())
+
+    if X >= 2000:
+        print("YES")
+    else:
+        print("NO")
 ```
 
 ---
