@@ -15,32 +15,18 @@ Chef drank $X$ ml of water today. Select the options where Chef followed the doc
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-08T16:41:13.598Z  
+**Submitted:** 2026-08-28T17:58:06.220Z  
 
 ```cpp
-import sys
+T = int(input())
 
-def main():
-    input_data = sys.stdin.read().split()
-    if not input_data:
-        return
-    
-    T = int(input_data[0])
-    idx = 1
-    
-    for _ in range(T):
-        X = int(input_data[idx])
-        Y = int(input_data[idx + 1])
-        idx += 2
-        
-        # Check if the sum is strictly greater than 6
-        if X + Y > 6:
-            print("YES")
-        else:
-            print("NO")
+for _ in range(T):
+    X, Y = map(int, input().split())
 
-if __name__ == '__main__':
-    main()
+    if X + Y > 6:
+        print("YES")
+    else:
+        print("NO")
 ```
 
 ---
