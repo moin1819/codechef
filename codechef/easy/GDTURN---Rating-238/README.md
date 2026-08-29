@@ -56,29 +56,21 @@ YES
 
 ## Solution
 
-**Language:** c_cpp  
+**Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-11T08:41:22.425Z  
+**Submitted:** 2026-08-28T17:57:55.414Z  
 
-```c_cpp
-#include <iostream>
-using namespace std;
+```py
+T = int(input())
 
-int main() {
-    int t;
-    cin >> t;
-    while(t--) {
-        int x, y;
-        cin >> x >> y;
-        if (x + y > 6) {
-            cout << "YES\n";
-        } else {
-            cout << "NO\n";
-        }
-    }
-    return 0;
-}
+for _ in range(T):
+    X, Y = map(int, input().split())
+
+    if X + Y > 6:
+        print("YES")
+    else:
+        print("NO")
 ```
 
 ---
