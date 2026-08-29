@@ -1,1 +1,1 @@
-print("7 plus 3 equals", 7 + 3)
+print(7, "plus", 3, "equals", 10)
