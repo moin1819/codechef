@@ -8,10 +8,6 @@
 
 Listen
 
-Introducing Listen to Problem✨
-
-Don't want to read? Now you can listen to the problem!
-
 Remember that to print multiple values on same line, we have to use comma inside print statement.
 
 We can also combine text and numbers in a single print statement by comma separating them.
@@ -45,10 +41,10 @@ My favorite number is 10
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-18T18:23:01.197Z  
+**Submitted:** 2026-08-29T16:10:14.614Z  
 
 ```py
-print("7 plus 3 equals", 7 + 3)
+print(7, "plus", 3, "equals", 10)
 ```
 
 ---
