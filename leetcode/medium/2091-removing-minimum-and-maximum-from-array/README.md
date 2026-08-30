@@ -63,8 +63,8 @@ We can remove it with 1 deletion.
 
 **Language:** Java  
 **Runtime:** 3 ms (beats 61.82%)  
-**Memory:** 86.7 MB (beats 60.18%)  
-**Submitted:** 2026-08-30T16:15:23.131Z  
+**Memory:** 86.6 MB (beats 60.18%)  
+**Submitted:** 2026-08-30T16:15:31.349Z  
 
 ```java
 class Solution {
