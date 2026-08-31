@@ -64,8 +64,8 @@ Note that the last node is not considered a local maxima because it does not hav
 
 **Language:** Java  
 **Runtime:** 5 ms (beats 40.73%)  
-**Memory:** 106 MB (beats 85.47%)  
-**Submitted:** 2026-08-31T16:01:46.692Z  
+**Memory:** 105.5 MB (beats 98.47%)  
+**Submitted:** 2026-08-31T16:02:13.952Z  
 
 ```java
 /**
@@ -94,7 +94,6 @@ class Solution {
         int minDistance = Integer.MAX_VALUE;
 
         while (curr.next != null) {
-            // Check if current node is local maxima or local minima
             boolean isMax = curr.val > prev.val && curr.val > curr.next.val;
             boolean isMin = curr.val < prev.val && curr.val < curr.next.val;
 
@@ -112,7 +111,6 @@ class Solution {
             currIdx++;
         }
 
-        // If fewer than 2 critical points were found
         if (firstIdx == -1 || prevIdx == firstIdx) {
             return new int[]{-1, -1};
         }
