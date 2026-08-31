@@ -24,7 +24,6 @@ class Solution {
         int minDistance = Integer.MAX_VALUE;
 
         while (curr.next != null) {
-            // Check if current node is local maxima or local minima
             boolean isMax = curr.val > prev.val && curr.val > curr.next.val;
             boolean isMin = curr.val < prev.val && curr.val < curr.next.val;
 
@@ -42,7 +41,6 @@ class Solution {
             currIdx++;
         }
 
-        // If fewer than 2 critical points were found
         if (firstIdx == -1 || prevIdx == firstIdx) {
             return new int[]{-1, -1};
         }
