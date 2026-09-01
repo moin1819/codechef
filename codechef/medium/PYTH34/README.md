@@ -4,26 +4,16 @@
 
 ## Problem
 
-### Multiple Choice Question
-
-What will be the output of this code?
-
-```
-a = -10
-b = -3
-c = a * b
-print(c)
-
-```
+_Description not available._
 
 ## Solution
 
-**Language:** C++  
+**Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-01T15:53:19.633Z  
+**Submitted:** 2026-09-01T15:53:11.829Z  
 
-```cpp
+```py
 a = -50
 b = 40
 
