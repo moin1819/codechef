@@ -52,22 +52,32 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T15:33:56.384Z  
+**Submitted:** 2026-09-02T15:33:59.687Z  
 
 ```java
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+import java.util.Scanner;
 
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		// your code goes here
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-	}
+        int T = sc.nextInt();
+
+        while (T-- > 0) {
+            int N = sc.nextInt();
+
+            int cost = (N / 2) * 30;
+
+            if (N % 2 != 0) {
+                cost += 20;
+            }
+
+            System.out.println(cost);
+        }
+
+        sc.close();
+    }
 }
-
 ```
 
 ---
