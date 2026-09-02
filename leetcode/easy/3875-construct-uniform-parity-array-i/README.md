@@ -53,8 +53,8 @@ Return `true` if it is possible to construct such an array, otherwise, return `f
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 45.2 MB (beats 57.87%)  
-**Submitted:** 2026-09-02T15:44:08.219Z  
+**Memory:** 45.1 MB (beats 73.43%)  
+**Submitted:** 2026-09-02T15:44:33.322Z  
 
 ```java
 class Solution {
