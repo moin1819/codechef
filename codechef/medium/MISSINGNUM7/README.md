@@ -52,25 +52,14 @@ Output
 
 ## Solution
 
-**Language:** Java  
+**Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T15:33:14.751Z  
+**Submitted:** 2026-09-02T15:32:18.887Z  
 
-```java
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        int S = sc.nextInt();
-
-        System.out.println(10 - S);
-
-        sc.close();
-    }
-}
+```py
+S = int(input())
+print(10 - S)
 ```
 
 ---
