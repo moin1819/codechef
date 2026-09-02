@@ -56,22 +56,30 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T15:38:08.954Z  
+**Submitted:** 2026-09-02T15:38:27.935Z  
 
 ```java
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+import java.util.Scanner;
 
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		// your code goes here
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-	}
+        int T = sc.nextInt();
+
+        while (T-- > 0) {
+            long N = sc.nextLong();
+
+            if (N == 1) {
+                System.out.println(1);
+            } else {
+                System.out.println(2 * N);
+            }
+        }
+
+        sc.close();
+    }
 }
-
 ```
 
 ---
