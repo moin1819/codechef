@@ -54,25 +54,41 @@ NOTA
 
 ## Solution
 
-**Language:** Python  
+**Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T15:30:06.864Z  
+**Submitted:** 2026-09-03T05:25:22.422Z  
 
-```py
-T = int(input())
+```java
+import java.util.*;
+import java.lang.*;
+import java.io.*;
 
-for _ in range(T):
-    XA, XB, XC = map(int, input().split())
-
-    if XA > 50:
-        print("A")
-    elif XB > 50:
-        print("B")
-    elif XC > 50:
-        print("C")
-    else:
-        print("NOTA")
+class Codechef
+{
+	public static void main (String[] args) 
+	{
+	    Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+       
+        while(t-- > 0){
+            int xa = sc.nextInt();
+            int xb = sc.nextInt();
+            int xc = sc.nextInt();
+            
+            if(xa > 50){
+                System.out.println("A");
+            } else if(xb > 50){
+                System.out.println("B");
+            } else if(xc > 50){
+                System.out.println("C");
+            } else {
+                System.out.println("NOTA");
+            }
+        }
+        sc.close();
+	}
+}
 ```
 
 ---
