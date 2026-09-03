@@ -63,9 +63,9 @@ It is not possible to construct `nums2` such that all elements have the same par
 ## Solution
 
 **Language:** Java  
-**Runtime:** 9 ms (beats 34.78%)  
-**Memory:** 121 MB (beats 86.96%)  
-**Submitted:** 2026-09-03T05:40:54.879Z  
+**Runtime:** 8 ms (beats 50.00%)  
+**Memory:** 121.7 MB (beats 62.32%)  
+**Submitted:** 2026-09-03T05:41:07.084Z  
 
 ```java
 class Solution {
@@ -82,8 +82,6 @@ class Solution {
                 minOdd = Math.min(minOdd, x);
             }
         }
-
-        // Already all odd or all even
         if (!hasOdd || !hasEven) {
             return true;
         }
@@ -94,7 +92,7 @@ class Solution {
             }
         }
 
-        return true;  // <-- You were missing this
+        return true;  
     }
 }
 ```
