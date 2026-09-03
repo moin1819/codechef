@@ -63,9 +63,9 @@ It is not possible to construct `nums2` such that all elements have the same par
 ## Solution
 
 **Language:** Java  
-**Runtime:** 8 ms (beats 50.00%)  
-**Memory:** 121.9 MB (beats 18.12%)  
-**Submitted:** 2026-09-03T05:39:15.286Z  
+**Runtime:** 9 ms (beats 34.78%)  
+**Memory:** 121 MB (beats 86.96%)  
+**Submitted:** 2026-09-03T05:40:54.879Z  
 
 ```java
 class Solution {
@@ -88,7 +88,6 @@ class Solution {
             return true;
         }
 
-        // Try to make all numbers odd
         for (int x : nums1) {
             if (x % 2 == 0 && x <= minOdd) {
                 return false;
