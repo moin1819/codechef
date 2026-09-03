@@ -12,8 +12,6 @@ class Solution {
                 minOdd = Math.min(minOdd, x);
             }
         }
-
-        // Already all odd or all even
         if (!hasOdd || !hasEven) {
             return true;
         }
@@ -24,6 +22,6 @@ class Solution {
             }
         }
 
-        return true;  // <-- You were missing this
+        return true;  
     }
 }
