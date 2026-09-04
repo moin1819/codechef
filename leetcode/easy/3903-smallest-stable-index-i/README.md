@@ -68,8 +68,8 @@ At index 0, the instability score is `0 - 0 = 0`, which is less than or equal to
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 99.79%)  
-**Memory:** 46.6 MB (beats 15.74%)  
-**Submitted:** 2026-09-04T16:58:56.580Z  
+**Memory:** 46.3 MB (beats 70.85%)  
+**Submitted:** 2026-09-04T16:59:25.445Z  
 
 ```java
 class Solution {
