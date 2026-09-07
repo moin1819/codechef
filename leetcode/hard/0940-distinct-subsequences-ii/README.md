@@ -47,9 +47,9 @@ Explanation: The 3 distinct subsequences are "a", "aa" and "aaa".
 ## Solution
 
 **Language:** Python  
-**Runtime:** 7 ms (beats 89.58%)  
-**Memory:** 19.3 MB (beats 72.40%)  
-**Submitted:** 2026-09-07T13:25:15.776Z  
+**Runtime:** 8 ms (beats 73.44%)  
+**Memory:** 19.2 MB (beats 72.40%)  
+**Submitted:** 2026-09-07T13:25:31.357Z  
 
 ```py
 class Solution:
