@@ -45,8 +45,8 @@ All numbers from 1 to 998 have fewer than four digits. Therefore, no commas are 
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 83.65%)  
-**Memory:** 42.6 MB (beats 39.85%)  
-**Submitted:** 2026-09-08T17:06:39.574Z  
+**Memory:** 42.5 MB (beats 72.85%)  
+**Submitted:** 2026-09-08T17:07:13.361Z  
 
 ```java
 class Solution {
