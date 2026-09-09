@@ -45,8 +45,8 @@ The numbers `"1,000"`, `"1,001"`, and `"1,002"` each contain one comma, giving a
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 99.36%)  
-**Memory:** 42.6 MB (beats 71.15%)  
-**Submitted:** 2026-09-09T14:19:41.739Z  
+**Memory:** 42.8 MB (beats 24.36%)  
+**Submitted:** 2026-09-09T14:20:03.530Z  
 
 ```java
 class Solution {
