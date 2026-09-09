@@ -65,7 +65,7 @@ It can be verified that there's no way to make a positive profit by the end of t
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T16:16:46.808Z  
+**Submitted:** 2026-09-09T16:17:15.809Z  
 
 ```java
 import java.util.*;
