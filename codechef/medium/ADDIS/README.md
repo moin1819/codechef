@@ -77,22 +77,39 @@ It can be shown that this is optimal.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T16:13:38.903Z  
+**Submitted:** 2026-09-09T16:14:11.709Z  
 
 ```java
 import java.util.*;
-import java.lang.*;
-import java.io.*;
 
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		// your code goes here
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-	}
+        int T = sc.nextInt();
+
+        while (T-- > 0) {
+            int N = sc.nextInt();
+
+            HashMap<Integer, Integer> freq = new HashMap<>();
+
+            int maxFreq = 0;
+
+            for (int i = 0; i < N; i++) {
+                int x = sc.nextInt();
+
+                int count = freq.getOrDefault(x, 0) + 1;
+                freq.put(x, count);
+
+                maxFreq = Math.max(maxFreq, count);
+            }
+
+            System.out.println((maxFreq + 1) / 2);
+        }
+
+        sc.close();
+    }
 }
-
 ```
 
 ---
