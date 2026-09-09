@@ -7,20 +7,24 @@ class Main {
         int T = sc.nextInt();
 
         while (T-- > 0) {
-            long X = sc.nextLong();
-            long Y = sc.nextLong();
+            int X = sc.nextInt();
+            int Y = sc.nextInt();
 
             long profit = 0;
-            long gpu = 0;
+            int gpu = 0;
             int days = 0;
 
             while (profit <= 0) {
                 days++;
-                if (Y * (2 * gpu + 1) > X) {
-                    gpu++;
-                    profit -= X;
-                }
-                profit += Y * gpu * gpu;
+
+                // Buy one GPU
+                gpu++;
+
+                // Mining income for this day
+                profit += (long) Y * gpu * gpu;
+
+                // Cost of GPU
+                profit -= X;
             }
 
             System.out.println(days);
