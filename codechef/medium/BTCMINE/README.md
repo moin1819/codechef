@@ -65,22 +65,44 @@ It can be verified that there's no way to make a positive profit by the end of t
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T16:14:35.866Z  
+**Submitted:** 2026-09-09T16:14:55.356Z  
 
 ```java
 import java.util.*;
-import java.lang.*;
-import java.io.*;
 
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		// your code goes here
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-	}
+        int T = sc.nextInt();
+
+        while (T-- > 0) {
+            int X = sc.nextInt();
+            int Y = sc.nextInt();
+
+            long profit = 0;
+            int gpu = 0;
+            int days = 0;
+
+            while (profit <= 0) {
+                days++;
+
+                // Buy one GPU
+                gpu++;
+
+                // Mining income for this day
+                profit += (long) Y * gpu * gpu;
+
+                // Cost of GPU
+                profit -= X;
+            }
+
+            System.out.println(days);
+        }
+
+        sc.close();
+    }
 }
-
 ```
 
 ---
