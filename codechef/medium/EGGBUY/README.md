@@ -68,22 +68,24 @@ It's better to buy from the second shop, spending $53$ coins.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T16:11:08.838Z  
+**Submitted:** 2026-09-09T16:11:40.711Z  
 
 ```java
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+import java.util.Scanner;
 
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		// your code goes here
-
-	}
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int X = sc.nextInt();
+        int Y = sc.nextInt();
+        int F = sc.nextInt();
+        
+        int cost1 = 12 * X;
+        int cost2 = 12 * Y + F;
+        
+        System.out.println(Math.min(cost1, cost2));
+    }
 }
-
 ```
 
 ---
