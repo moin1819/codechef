@@ -53,8 +53,8 @@ You are given an array of digits called `digits`. Your task is to determine the 
 
 **Language:** Java  
 **Runtime:** 11 ms (beats 19.47%)  
-**Memory:** 46.8 MB (beats 15.20%)  
-**Submitted:** 2026-09-11T13:56:50.529Z  
+**Memory:** 47 MB (beats 11.87%)  
+**Submitted:** 2026-09-11T13:56:58.497Z  
 
 ```java
 class Solution {
