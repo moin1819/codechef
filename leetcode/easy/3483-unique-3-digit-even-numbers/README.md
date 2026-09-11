@@ -54,7 +54,7 @@ You are given an array of digits called `digits`. Your task is to determine the 
 **Language:** Java  
 **Runtime:** 11 ms (beats 19.47%)  
 **Memory:** 47 MB (beats 11.87%)  
-**Submitted:** 2026-09-11T13:56:58.497Z  
+**Submitted:** 2026-09-11T13:58:00.827Z  
 
 ```java
 class Solution {
