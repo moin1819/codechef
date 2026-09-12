@@ -45,9 +45,9 @@ You can choose the intervals with indices 1, 3, 5, and 6 with respective weights
 ## Solution
 
 **Language:** Java  
-**Runtime:** 70 ms (beats 98.15%)  
-**Memory:** 157.8 MB (beats 96.30%)  
-**Submitted:** 2026-09-12T08:16:09.283Z  
+**Runtime:** 68 ms (beats 98.15%)  
+**Memory:** 157.8 MB (beats 94.44%)  
+**Submitted:** 2026-09-12T08:39:21.913Z  
 
 ```java
 import java.util.*;
