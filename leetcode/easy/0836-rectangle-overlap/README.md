@@ -49,17 +49,15 @@ Output: false
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 42.7 MB (beats 52.92%)  
-**Submitted:** 2026-09-14T02:50:22.408Z  
+**Memory:** 42.6 MB (beats 52.92%)  
+**Submitted:** 2026-09-14T02:50:30.093Z  
 
 ```java
 class Solution {
     public boolean isRectangleOverlap(int[] rec1, int[] rec2) {
 
-        // Check horizontal overlap
         boolean xOverlap = rec1[0] < rec2[2] && rec2[0] < rec1[2];
 
-        // Check vertical overlap
         boolean yOverlap = rec1[1] < rec2[3] && rec2[1] < rec1[3];
 
         return xOverlap && yOverlap;
