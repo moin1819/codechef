@@ -5,8 +5,9 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        PrintWriter out = new PrintWriter(new BufferedOutputStream(System.out));
 
-        int T = Integer.parseInt(br.readLine());
+        int T = Integer.parseInt(br.readLine().trim());
 
         while (T-- > 0) {
             StringTokenizer st = new StringTokenizer(br.readLine());
@@ -14,26 +15,26 @@ public class Main {
             int N = Integer.parseInt(st.nextToken());
             int M = Integer.parseInt(st.nextToken());
 
-            String A = br.readLine();
+            String A = br.readLine().trim();
 
             int ones = 0;
 
             // Count number of 1s in A
-            for (char ch : A.toCharArray()) {
-                if (ch == '1') {
+            for (int i = 0; i < N; i++) {
+                if (A.charAt(i) == '1') {
                     ones++;
                 }
             }
 
-            int total = ones * M;
+            long total = (long) ones * M;
 
             // Total number of 1s is odd
             if (total % 2 != 0) {
-                System.out.println(0);
+                out.println(0);
                 continue;
             }
 
-            int target = total / 2;
+            long target = total / 2;
 
             // freq[k] = number of positions in A
             // where prefix sum of 1s is k
@@ -45,7 +46,6 @@ public class Main {
                 if (A.charAt(i) == '1') {
                     prefix++;
                 }
-
                 freq[prefix]++;
             }
 
@@ -53,14 +53,15 @@ public class Main {
 
             // For each copy of A
             for (int copy = 0; copy < M; copy++) {
-                int required = target - copy * ones;
+                long required = target - (long) copy * ones;
 
                 if (required >= 0 && required <= ones) {
-                    answer += freq[required];
+                    answer += freq[(int) required];
                 }
             }
 
-            System.out.println(answer);
+            out.println(answer);
         }
+        out.flush();
     }
 }
