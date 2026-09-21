@@ -63,36 +63,27 @@ A  **suffix**  of an array is a subarray that starts at any point within the arr
 
 **Language:** Java  
 **Runtime:** 11 ms (beats 98.08%)  
-**Memory:** 92.3 MB (beats 61.54%)  
-**Submitted:** 2026-09-21T15:18:55.227Z  
+**Memory:** 93.8 MB (beats 26.92%)  
+**Submitted:** 2026-09-21T15:19:19.870Z  
 
 ```java
 class Solution {
     public long[] resultArray(int[] nums, int k) {
         long[] ans = new long[k];
-
         long[] dp = new long[k];
-
         for (int num : nums) {
             int val = num % k;
-
             long[] next = new long[k];
             next[val]++;
-
-            // Extend previous subarrays
             for (int r = 0; r < k; r++) {
                 int newRemainder = (r * val) % k;
                 next[newRemainder] += dp[r];
             }
-
-            // Add counts to answer
             for (int r = 0; r < k; r++) {
                 ans[r] += next[r];
             }
-
             dp = next;
         }
-
         return ans;
     }
 }
