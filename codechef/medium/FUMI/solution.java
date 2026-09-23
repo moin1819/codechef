@@ -1,7 +1,6 @@
 import java.util.*;
 
 class Main {
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -13,32 +12,29 @@ class Main {
             long B = sc.nextLong();
             long C = sc.nextLong();
 
-            long answer = Long.MAX_VALUE;
+            long ans = Long.MAX_VALUE;
 
-            for (long Y = 1; Y <= N; Y++) {
+            // Case 1:
+            // Use one spray to cover the entire house.
+            // X = 1, Y = N, Z = 1
+            ans = Math.min(ans, A + B * N + C);
 
-                // Number of sprays required
-                long Z = (N + Y - 1) / Y;
+            // For B * X >= C, optimal Y is X.
+            long startX = (C + B - 1) / B;
+            startX = Math.max(1, startX);
 
-                long X;
+            for (long X = startX; X <= N; X++) {
+                long Y = X;
 
-                if (Z == 1) {
-                    // One spray covers the entire house.
-                    X = 1;
-                } else {
-                    // Minimum movement needed between sprays.
-                    long distance = N - Y;
-                    long moves = Z - 1;
-
-                    X = (distance + moves - 1) / moves;
-                }
+                // Number of sprays / required linger period
+                long Z = (N + X - 1) / X;
 
                 long cost = A * X + B * Y + C * Z;
 
-                answer = Math.min(answer, cost);
+                ans = Math.min(ans, cost);
             }
 
-            System.out.println(answer);
+            System.out.println(ans);
         }
 
         sc.close();
