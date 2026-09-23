@@ -82,7 +82,7 @@ It can be verified that for any $X \gt 4$, no choice of subarray can make the ar
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T16:15:42.438Z  
+**Submitted:** 2026-09-23T16:15:58.780Z  
 
 ```java
 import java.util.*;
