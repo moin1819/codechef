@@ -77,7 +77,7 @@ Thus, it's impossible to make the array  *good*  after a single deletion.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T16:09:21.133Z  
+**Submitted:** 2026-09-23T16:09:25.725Z  
 
 ```java
 import java.util.*;
