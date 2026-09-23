@@ -76,12 +76,13 @@ The cost of this is $1+1+1\cdot 2 = 4$.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T16:21:56.899Z  
+**Submitted:** 2026-09-23T16:20:58.773Z  
 
 ```java
 import java.util.*;
 
 class Main {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -93,29 +94,32 @@ class Main {
             long B = sc.nextLong();
             long C = sc.nextLong();
 
-            long ans = Long.MAX_VALUE;
+            long answer = Long.MAX_VALUE;
 
-            // Case 1:
-            // Use one spray to cover the entire house.
-            // X = 1, Y = N, Z = 1
-            ans = Math.min(ans, A + B * N + C);
+            for (long Y = 1; Y <= N; Y++) {
 
-            // For B * X >= C, optimal Y is X.
-            long startX = (C + B - 1) / B;
-            startX = Math.max(1, startX);
+                // Number of sprays required
+                long Z = (N + Y - 1) / Y;
 
-            for (long X = startX; X <= N; X++) {
-                long Y = X;
+                long X;
 
-                // Number of sprays / required linger period
-                long Z = (N + X - 1) / X;
+                if (Z == 1) {
+                    // One spray covers the entire house.
+                    X = 1;
+                } else {
+                    // Minimum movement needed between sprays.
+                    long distance = N - Y;
+                    long moves = Z - 1;
+
+                    X = (distance + moves - 1) / moves;
+                }
 
                 long cost = A * X + B * Y + C * Z;
 
-                ans = Math.min(ans, cost);
+                answer = Math.min(answer, cost);
             }
 
-            System.out.println(ans);
+            System.out.println(answer);
         }
 
         sc.close();
