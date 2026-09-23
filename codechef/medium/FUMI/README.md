@@ -76,22 +76,55 @@ The cost of this is $1+1+1\cdot 2 = 4$.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T16:17:32.716Z  
+**Submitted:** 2026-09-23T16:20:42.285Z  
 
 ```java
 import java.util.*;
-import java.lang.*;
-import java.io.*;
 
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		// your code goes here
+class Main {
 
-	}
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int T = sc.nextInt();
+
+        while (T-- > 0) {
+            long N = sc.nextLong();
+            long A = sc.nextLong();
+            long B = sc.nextLong();
+            long C = sc.nextLong();
+
+            long answer = Long.MAX_VALUE;
+
+            for (long Y = 1; Y <= N; Y++) {
+
+                // Number of sprays required
+                long Z = (N + Y - 1) / Y;
+
+                long X;
+
+                if (Z == 1) {
+                    // One spray covers the entire house.
+                    X = 1;
+                } else {
+                    // Minimum movement needed between sprays.
+                    long distance = N - Y;
+                    long moves = Z - 1;
+
+                    X = (distance + moves - 1) / moves;
+                }
+
+                long cost = A * X + B * Y + C * Z;
+
+                answer = Math.min(answer, cost);
+            }
+
+            System.out.println(answer);
+        }
+
+        sc.close();
+    }
 }
-
 ```
 
 ---
