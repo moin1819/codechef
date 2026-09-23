@@ -1,12 +1,4 @@
 import java.util.*;
-import java.lang.*;
-import java.io.*;
-
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		// your coimport java.util.*;
 
 class Main {
 
@@ -23,8 +15,6 @@ class Main {
     }
 
     static boolean possible(long X) {
-
-        // Find the first and last inversion.
         int firstBad = -1;
         int lastBad = -1;
 
@@ -37,17 +27,10 @@ class Main {
             }
         }
 
-        // Array is already sorted.
         if (firstBad == -1) {
             return true;
         }
 
-        /*
-         * Before firstBad the array is already sorted.
-         *
-         * We need to start at the first position whose value
-         * is >= X. Its previous value, if any, must be <= X.
-         */
         int L = -1;
 
         for (int i = 0; i <= firstBad; i++) {
@@ -65,26 +48,12 @@ class Main {
             return false;
         }
 
-        /*
-         * We must include the last inversion.
-         *
-         * After the smoothing segment, the next element must
-         * be >= X. Since the suffix after lastBad is sorted,
-         * extend R until the next element is >= X.
-         */
         int R = lastBad + 1;
 
         while (R < N - 1 && A[R + 1] < X) {
             R++;
         }
 
-        /*
-         * Check that the amount of "excess" is never negative.
-         *
-         * If prefix sum of (A[i] - X) becomes negative,
-         * there isn't enough excess to raise the elements
-         * to X.
-         */
         long sum = 0;
 
         for (int i = L; i <= R; i++) {
@@ -105,7 +74,6 @@ class Main {
 
         while (T-- > 0) {
             N = sc.nextInt();
-
             A = new long[N];
 
             long maxA = 0;
@@ -115,7 +83,6 @@ class Main {
                 maxA = Math.max(maxA, A[i]);
             }
 
-            // Already sorted => arbitrarily large X works.
             if (isSorted()) {
                 System.out.println(-1);
                 continue;
@@ -141,7 +108,4 @@ class Main {
 
         sc.close();
     }
-}de goes here
-
-	}
 }
