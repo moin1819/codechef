@@ -50,9 +50,9 @@ Explanation: Each distinct word is written only once in the final answer.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 9 ms (beats 82.40%)  
-**Memory:** 47.1 MB (beats 72.00%)  
-**Submitted:** 2026-09-25T13:47:38.184Z  
+**Runtime:** 10 ms (beats 68.80%)  
+**Memory:** 47.2 MB (beats 64.00%)  
+**Submitted:** 2026-09-25T13:48:20.127Z  
 
 ```java
 import java.util.*;
