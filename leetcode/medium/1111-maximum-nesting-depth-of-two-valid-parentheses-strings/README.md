@@ -59,8 +59,8 @@ Output: [0,0,0,1,1,0,1,1]
 
 **Language:** Java  
 **Runtime:** 2 ms (beats 57.95%)  
-**Memory:** 45.2 MB (beats 84.44%)  
-**Submitted:** 2026-09-30T09:48:51.645Z  
+**Memory:** 45.5 MB (beats 34.77%)  
+**Submitted:** 2026-09-30T09:50:14.074Z  
 
 ```java
 public class Solution {
