@@ -1,31 +1,31 @@
-import java.util.*;
+import java.util.Scanner;
 
-class Main {
+public class Main {
+    public static void solve(Scanner sc) {
+        int A = sc.nextInt();
+        int B = sc.nextInt();
+        int C = sc.nextInt();
+        int D = sc.nextInt();
+        int E = sc.nextInt();
+
+        // Check all 3 possible combinations for (checked-in bags, carry-on bag)
+        if ((A + B <= D && C <= E) || 
+            (A + C <= D && B <= E) || 
+            (B + C <= D && A <= E)) {
+            System.out.println("YES");
+        } else {
+            System.out.println("NO");
+        }
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-        int T = sc.nextInt();
-
-        while (T-- > 0) {
-            int N = sc.nextInt();
-            String S = sc.next();
-
-            int zeros = 0;
-            int ones = 0;
-
-            for (char c : S.toCharArray()) {
-                if (c == '0') {
-                    zeros++;
-                } else {
-                    ones++;
-                }
+        if (sc.hasNextInt()) {
+            int T = sc.nextInt();
+            while (T-- > 0) {
+                solve(sc);
             }
-
-            int answer = Math.min(ones, zeros + 1);
-
-            System.out.println(answer);
         }
-
         sc.close();
     }
 }
