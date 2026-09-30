@@ -4,103 +4,91 @@
 
 ## Problem
 
-### Zero String
+### Airline Restrictions
 
-You are given a binary string $S$ of length $N$. You are allowed to perform the following types of operations on string $S$:
+Chef has $3$ bags that she wants to take on a flight. They weigh $A$, $B$, and $C$ kgs respectively. She wants to check-in exactly two of these bags and carry the remaining one bag with her.
 
-- Delete any one character from $S$, and concatenate the remaining parts of the string. For example, if we delete the third character of $S = 1101$, it becomes $S = 111$.
-- Flip all the characters of $S$. For example, if we flip all character of $S = 1101$, it becomes $S = 0010$.
-
-Given that you can use either type of operation any number of times, find the  **minimum**  number of operations required to make all characters of the string $S$ equal to $0$.
+The airline restrictions says that the total sum of the weights of the bags that are checked-in cannot exceed $D$ kgs and the weight of the bag which is carried cannot exceed $E$ kgs. Find if Chef can take all the three bags on the flight.
 
 ### Input Format
-- The first line of input will contain a single integer $T$, denoting the number of test cases.
-- Each test case consists of multiple lines of input. The first line of each test case contains an integer $N$ — the length of the string. The next line contains a binary string $S$ of length $N$.
+- The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
+- Each testcase contains a single line of input, five space separated integers $A, B, C, D, E$.
 ### Output Format
 
-For each test case, output on a new line, the  **minimum**  number of operations required to make all characters of the string $S$ equal to $0$.
+For each testcase, output in a single line answer `"YES"` if Chef can take all the three bags with her or `"NO"` if she cannot.
+
+You may print each character of the string in uppercase or lowercase (for example, the strings "yEs", "yes", "Yes" and "YES" will all be treated as identical).
 
 ### Constraints
-- $1 \leq T \leq 2000$
-- $1 \leq N \leq 10^5$
-- $S$ contains $0$ and $1$ only.
-- The sum of $N$ over all test cases won't exceed $2\cdot 10^5$.
+- $1 \leq T \leq 36000$
+- $1 \leq A, B, C \leq 10$
+- $15 \leq D \leq 20$
+- $5 \leq E \leq 10$
+### Subtasks
+
+ **Subtask #1 (100 points):**  original constraints
+
 ### Sample 1:
 Input
 Output
 
 ```
-4
-2
-01
 3
-101
-3
-111
-4
-0000
-
+1 1 1 15 5
+8 7 6 15 5
+8 5 7 15 6
 ```
 
 ```
-1
-2
-1
-0
-
+YES
+NO
+YES
 ```
 
 ### Explanation:
 
- **Test case $1$:**  You can use one operation to delete the second character of the string $S$. Thus, the string becomes $0$. Note that all characters of this string are $0$ and thus, it satisfies the conditions.
+ **Test case $1$:**  Chef can check-in the first and second bag (since $1 + 1 = 2 \le 15$) and carry the third bag with her (since $1 \le 5$).
 
- **Test case $2$:**  You can perform the following operations:
+ **Test case $2$:**  None of the three bags can be carried in hand without violating the airport restrictions.
 
-- Operation $1$: Flip all characters of the string. Thus, string becomes $010$.
-- Operation $2$: Delete the second character of the string. Thus, string becomes $00$.
-
-Note that we have obtained a string having all characters as $0$ in two operations. It can be shown that this is the minimum number of operations required.
-
- **Test case $3$:**  You can use one operation to flip all characters of the string $S$. Thus, the string becomes $000$. Note that all characters of this string are $0$ and thus, it satisfies the conditions.
-
- **Test case $4$:**  The existing string satisfies the conditions. Thus, we require zero operations.
+ **Test case $3$:**  Chef can check-in the first and the third bag (since $8 + 7 \le 15$) and carry the second bag with her (since $5 \le 6$).
 
 ## Solution
 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-21T15:16:28.810Z  
+**Submitted:** 2026-09-30T09:47:26.651Z  
 
 ```java
-import java.util.*;
+import java.util.Scanner;
 
-class Main {
+public class Main {
+    public static void solve(Scanner sc) {
+        int A = sc.nextInt();
+        int B = sc.nextInt();
+        int C = sc.nextInt();
+        int D = sc.nextInt();
+        int E = sc.nextInt();
+
+        // Check all 3 possible combinations for (checked-in bags, carry-on bag)
+        if ((A + B <= D && C <= E) || 
+            (A + C <= D && B <= E) || 
+            (B + C <= D && A <= E)) {
+            System.out.println("YES");
+        } else {
+            System.out.println("NO");
+        }
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-        int T = sc.nextInt();
-
-        while (T-- > 0) {
-            int N = sc.nextInt();
-            String S = sc.next();
-
-            int zeros = 0;
-            int ones = 0;
-
-            for (char c : S.toCharArray()) {
-                if (c == '0') {
-                    zeros++;
-                } else {
-                    ones++;
-                }
+        if (sc.hasNextInt()) {
+            int T = sc.nextInt();
+            while (T-- > 0) {
+                solve(sc);
             }
-
-            int answer = Math.min(ones, zeros + 1);
-
-            System.out.println(answer);
         }
-
         sc.close();
     }
 }
