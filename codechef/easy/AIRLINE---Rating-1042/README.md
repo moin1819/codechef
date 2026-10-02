@@ -58,37 +58,32 @@ YES
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T09:47:26.651Z  
+**Submitted:** 2026-10-02T16:34:16.451Z  
 
 ```java
-import java.util.Scanner;
+import java.util.*;
 
-public class Main {
-    public static void solve(Scanner sc) {
-        int A = sc.nextInt();
-        int B = sc.nextInt();
-        int C = sc.nextInt();
-        int D = sc.nextInt();
-        int E = sc.nextInt();
-
-        // Check all 3 possible combinations for (checked-in bags, carry-on bag)
-        if ((A + B <= D && C <= E) || 
-            (A + C <= D && B <= E) || 
-            (B + C <= D && A <= E)) {
-            System.out.println("YES");
-        } else {
-            System.out.println("NO");
-        }
-    }
-
+class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        if (sc.hasNextInt()) {
-            int T = sc.nextInt();
-            while (T-- > 0) {
-                solve(sc);
-            }
+
+        int T = sc.nextInt();
+
+        while (T-- > 0) {
+            int A = sc.nextInt();
+            int B = sc.nextInt();
+            int C = sc.nextInt();
+            int D = sc.nextInt();
+            int E = sc.nextInt();
+
+            boolean possible =
+                (A <= E && B + C <= D) ||
+                (B <= E && A + C <= D) ||
+                (C <= E && A + B <= D);
+
+            System.out.println(possible ? "YES" : "NO");
         }
+
         sc.close();
     }
 }
