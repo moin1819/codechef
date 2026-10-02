@@ -34,8 +34,8 @@ Output: ["()"]
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 44.3 MB (beats 79.36%)  
-**Submitted:** 2026-10-02T16:36:26.957Z  
+**Memory:** 44.4 MB (beats 79.36%)  
+**Submitted:** 2026-10-02T16:36:10.626Z  
 
 ```java
 import java.util.*;
@@ -46,6 +46,7 @@ class Solution {
         backtrack(result, new StringBuilder(), 0, 0, n);
         return result;
     }
+
     private void backtrack(List<String> result, StringBuilder current,
                             int open, int close, int n) {
 
@@ -54,12 +55,14 @@ class Solution {
             return;
         }
 
+        // Add opening bracket
         if (open < n) {
             current.append('(');
             backtrack(result, current, open + 1, close, n);
             current.deleteCharAt(current.length() - 1);
         }
 
+        // Add closing bracket only when valid
         if (close < open) {
             current.append(')');
             backtrack(result, current, open, close + 1, n);
