@@ -46,7 +46,7 @@ Output: 0
 **Language:** Java  
 **Runtime:** 5 ms (beats 75.27%)  
 **Memory:** 46.3 MB (beats 74.77%)  
-**Submitted:** 2026-10-03T08:15:56.884Z  
+**Submitted:** 2026-10-03T08:16:30.305Z  
 
 ```java
 import java.util.*;
