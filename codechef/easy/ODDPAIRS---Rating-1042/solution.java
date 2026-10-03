@@ -13,14 +13,12 @@ class Main {
             int D = sc.nextInt();
             int E = sc.nextInt();
 
-            if ((A <= E && B + C <= D) ||
+            boolean possible =
+                (A <= E && B + C <= D) ||
                 (B <= E && A + C <= D) ||
-                (C <= E && A + B <= D)) {
-                
-                System.out.println("YES");
-            } else {
-                System.out.println("NO");
-            }
+                (C <= E && A + B <= D);
+
+            System.out.println(possible ? "YES" : "NO");
         }
 
         sc.close();
