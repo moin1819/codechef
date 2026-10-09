@@ -56,9 +56,9 @@ Explanation: Add '(' to match the first '))', Add '))' to match the last '('.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 12 ms (beats 33.29%)  
-**Memory:** 47.6 MB (beats 42.50%)  
-**Submitted:** 2026-10-09T13:20:19.591Z  
+**Runtime:** 11 ms (beats 68.60%)  
+**Memory:** 47.8 MB (beats 11.85%)  
+**Submitted:** 2026-10-09T13:20:28.225Z  
 
 ```java
 
