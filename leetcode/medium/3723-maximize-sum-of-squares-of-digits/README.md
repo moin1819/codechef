@@ -68,9 +68,9 @@ There are no integers that have exactly 1 digit and whose digits sum to 10. Ther
 ## Solution
 
 **Language:** Python  
-**Runtime:** 1 ms (beats 79.53%)  
+**Runtime:** 0 ms (beats 100.00%)  
 **Memory:** 21.1 MB (beats 59.06%)  
-**Submitted:** 2026-10-14T13:13:52.376Z  
+**Submitted:** 2026-10-14T13:14:08.086Z  
 
 ```py
 class Solution:
