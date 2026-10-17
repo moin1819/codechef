@@ -56,9 +56,9 @@ The sum of the squares of the distinct counts in all subarrays is equal to 12 + 
 ## Solution
 
 **Language:** Python  
-**Runtime:** 7432 ms (beats 10.34%)  
-**Memory:** 51.3 MB (beats 65.52%)  
-**Submitted:** 2026-10-16T14:26:06.106Z  
+**Runtime:** 7057 ms (beats 10.34%)  
+**Memory:** 51.4 MB (beats 65.52%)  
+**Submitted:** 2026-10-16T14:26:24.084Z  
 
 ```py
 class SegmentTree:
