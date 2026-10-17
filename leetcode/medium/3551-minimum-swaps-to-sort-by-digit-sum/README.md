@@ -59,9 +59,9 @@ A  **swap**  is defined as exchanging the values at two distinct positions in th
 ## Solution
 
 **Language:** Python  
-**Runtime:** 1551 ms (beats 12.39%)  
-**Memory:** 48.8 MB (beats 35.40%)  
-**Submitted:** 2026-10-17T17:28:46.756Z  
+**Runtime:** 1353 ms (beats 27.43%)  
+**Memory:** 48.9 MB (beats 35.40%)  
+**Submitted:** 2026-10-17T17:29:08.332Z  
 
 ```py
 class Solution:
