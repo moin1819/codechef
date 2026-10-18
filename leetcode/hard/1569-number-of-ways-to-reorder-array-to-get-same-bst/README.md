@@ -57,9 +57,9 @@ Explanation: There are no other orderings of nums that will yield the same BST.
 ## Solution
 
 **Language:** Python  
-**Runtime:** 1845 ms (beats 5.52%)  
-**Memory:** 254.5 MB (beats 21.47%)  
-**Submitted:** 2026-10-18T17:56:12.328Z  
+**Runtime:** 1875 ms (beats 5.52%)  
+**Memory:** 254.3 MB (beats 22.70%)  
+**Submitted:** 2026-10-18T17:57:10.552Z  
 
 ```py
 class Solution:
