@@ -60,11 +60,11 @@ Your rival team is $1$st, and you are $2$nd, no teams between you.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T16:21:16.265Z  
+**Submitted:** 2026-10-21T16:21:30.735Z  
 
 ```py
-# cook your dish here
-
+X, Y = map(int, input().split())
+print(abs(X - Y) - 1)
 ```
 
 ---
