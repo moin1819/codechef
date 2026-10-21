@@ -53,19 +53,27 @@ Test case $1$: $14 = 1 + 2 + 4 + 7$ uses $K = 4$.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T16:25:35.053Z  
+**Submitted:** 2026-10-21T16:26:24.944Z  
 
 ```py
 t = int(input())
 
 for _ in range(t):
     n = int(input())
-    k = 0
+    lo, hi = 1, 2000000
+    ans = 0
 
-    while (k + 1) * (k + 2) * (k + 3) // 6 <= n:
-        k += 1
+    while lo <= hi:
+        mid = (lo + hi) // 2
+        total = mid * (mid + 1) * (mid + 2) // 6
 
-    print(k)
+        if total <= n:
+            ans = mid
+            lo = mid + 1
+        else:
+            hi = mid - 1
+
+    print(ans)
 ```
 
 ---
