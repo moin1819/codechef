@@ -53,18 +53,27 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T16:25:53.256Z  
+**Submitted:** 2026-10-21T16:26:17.024Z  
 
 ```py
 t = int(input())
 
 for _ in range(t):
-    n, d = map(int, input().split())
+    n = int(input())
+    lo, hi = 1, 2000000
+    ans = 0
 
-    while str(d) in str(n):
-        n += 1
+    while lo <= hi:
+        mid = (lo + hi) // 2
+        total = mid * (mid + 1) * (mid + 2) // 6
 
-    print(n)
+        if total <= n:
+            ans = mid
+            lo = mid + 1
+        else:
+            hi = mid - 1
+
+    print(ans)
 ```
 
 ---
