@@ -62,9 +62,9 @@ It is impossible to reach `[2, 0, 1, 3]`. Thus, the answer is -1.
 ## Solution
 
 **Language:** Python  
-**Runtime:** 167 ms (beats 14.61%)  
-**Memory:** 31.3 MB (beats 86.52%)  
-**Submitted:** 2026-10-22T17:35:38.041Z  
+**Runtime:** 170 ms (beats 14.61%)  
+**Memory:** 31.2 MB (beats 93.26%)  
+**Submitted:** 2026-10-22T17:35:47.095Z  
 
 ```py
 class Solution:
