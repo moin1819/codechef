@@ -72,9 +72,9 @@ The XOR value of this path is 0, which is the minimum possible.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 196 ms (beats 44.83%)  
+**Runtime:** 202 ms (beats 41.38%)  
 **Memory:** 47.6 MB (beats 87.93%)  
-**Submitted:** 2026-10-28T11:26:05.866Z  
+**Submitted:** 2026-10-28T11:26:29.192Z  
 
 ```java
 class Solution {
