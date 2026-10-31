@@ -77,9 +77,9 @@ Number	Full Path
 ## Solution
 
 **Language:** Python  
-**Runtime:** 457 ms (beats 91.45%)  
-**Memory:** 33.8 MB (beats 91.45%)  
-**Submitted:** 2026-10-31T06:09:42.958Z  
+**Runtime:** 460 ms (beats 91.45%)  
+**Memory:** 33.7 MB (beats 91.45%)  
+**Submitted:** 2026-10-31T06:09:51.778Z  
 
 ```py
 class Solution:
