@@ -56,24 +56,37 @@ NO
 
 ## Solution
 
-**Language:** Python  
+**Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-08T17:35:33.810Z  
+**Submitted:** 2026-11-09T10:49:38.449Z  
 
-```py
-def solve():
-    A, B, X = map(int, input().split())
-    diff = abs(A - B)
-    
-    if diff % (2 * X) == 0:
-        print("YES")
-    else:
-        print("NO")
+```java
 
-t = int(input())
-for _ in range(t):
-    solve()
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int T = sc.nextInt();
+
+        while (T-- > 0) {
+            long A = sc.nextLong();
+            long B = sc.nextLong();
+            long X = sc.nextLong();
+
+            if (Math.abs(A - B) % (2 * X) == 0) {
+                System.out.println("YES");
+            } else {
+                System.out.println("NO");
+            }
+        }
+
+        sc.close();
+    }
+}
+
 ```
 
 ---
