@@ -72,8 +72,8 @@ The optimal path is `0 → 3` with total cost = `costs[3] + (3 - 0)2 = 3 + 9 = 1
 
 **Language:** Java  
 **Runtime:** 14 ms (beats 39.84%)  
-**Memory:** 116.5 MB (beats 78.17%)  
-**Submitted:** 2026-11-10T13:23:04.541Z  
+**Memory:** 116.9 MB (beats 60.98%)  
+**Submitted:** 2026-11-10T13:23:14.848Z  
 
 ```java
 
