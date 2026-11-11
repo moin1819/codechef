@@ -62,9 +62,9 @@ Since no items are required (`need1 = need2 = 0`), we buy nothing and pay 0.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms (beats 100.00%)  
-**Memory:** 41.9 MB (beats 98.53%)  
-**Submitted:** 2026-11-11T11:49:09.507Z  
+**Runtime:** 2 ms (beats 41.18%)  
+**Memory:** 42.2 MB (beats 89.71%)  
+**Submitted:** 2026-11-11T11:49:40.757Z  
 
 ```java
 
