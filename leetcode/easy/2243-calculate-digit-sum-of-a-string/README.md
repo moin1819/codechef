@@ -58,8 +58,8 @@ s becomes "0" + "0" + "0" = "000", whose length is equal to k, so we return "000
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 98.69%)  
-**Memory:** 42.6 MB (beats 78.17%)  
-**Submitted:** 2026-11-16T05:54:43.363Z  
+**Memory:** 42.2 MB (beats 93.67%)  
+**Submitted:** 2026-11-16T05:54:52.881Z  
 
 ```java
 
