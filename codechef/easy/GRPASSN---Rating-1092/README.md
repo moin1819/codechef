@@ -73,7 +73,7 @@ So, there is a possible arrangement that Chef can make so that all of them are h
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-16T05:54:16.085Z  
+**Submitted:** 2026-11-17T17:10:28.201Z  
 
 ```java
 
@@ -87,17 +87,18 @@ class Main {
 
         while (t-- > 0) {
             int n = sc.nextInt();
-            int[] freq = new int[n + 1];
+
+            int[] count = new int[n + 1];
 
             for (int i = 0; i < n; i++) {
-                int x = sc.nextInt();
-                freq[x]++;
+                int p = sc.nextInt();
+                count[p]++;
             }
 
             boolean possible = true;
 
             for (int i = 2; i <= n; i++) {
-                if (freq[i] % i != 0) {
+                if (count[i] % i != 0) {
                     possible = false;
                     break;
                 }
