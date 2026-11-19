@@ -50,14 +50,12 @@ Java
 ## Solution
 
 **Language:** Java  
-**Runtime:** 18 ms (beats 88.54%)  
-**Memory:** 59.7 MB (beats 25.00%)  
-**Submitted:** 2026-11-19T12:51:07.805Z  
+**Runtime:** 19 ms (beats 33.33%)  
+**Memory:** 59.5 MB (beats 46.87%)  
+**Submitted:** 2026-11-19T12:51:18.360Z  
 
 ```java
-
 import java.util.Arrays;
-
 class Solution {
     public int minimizeSum(int[] nums) {
         Arrays.sort(nums);
