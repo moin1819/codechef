@@ -83,7 +83,7 @@ In the third test case  **N**  equals to 5,  **K**  equals to 1,  **A**  equals 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-18T17:51:19.646Z  
+**Submitted:** 2026-11-18T17:51:11.397Z  
 
 ```java
 import java.util.Scanner;
