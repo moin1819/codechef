@@ -47,10 +47,11 @@ Explanation: The array ans is formed as follows:
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 97.61%)  
-**Memory:** 46.4 MB (beats 92.89%)  
-**Submitted:** 2026-11-22T11:02:15.057Z  
+**Memory:** 46.8 MB (beats 55.01%)  
+**Submitted:** 2026-11-22T11:03:31.981Z  
 
 ```java
+
 class Solution {
     public int[] getConcatenation(int[] nums) {
         int n = nums.length;
@@ -64,6 +65,7 @@ class Solution {
         return ans;
     }
 }
+
 ```
 
 ---
