@@ -70,43 +70,34 @@ The final array is $A = [5, 5, 3, 4, 5]$ and the total cost is $2+2 = 4$. Thus, 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-22T10:52:08.001Z  
+**Submitted:** 2026-11-22T10:52:45.297Z  
 
 ```java
 import java.util.*;
 import java.lang.*;
 import java.io.*;
-
 class Codechef
 {
     public static void main (String[] args) throws java.lang.Exception
     {
         Scanner scanner = new Scanner(System.in);
-        
         if (!scanner.hasNextInt()) return;
         int t = scanner.nextInt();
-        
         while (t-- > 0) {
             int n = scanner.nextInt();
             long x = scanner.nextLong();
             long c = scanner.nextLong();
-            
             long totalSum = 0;
-            
             for (int i = 0; i < n; i++) {
                 long a = scanner.nextLong();
-                // If replacing with X and paying C yields more coins, we do it.
-                // Net coins from this bag if we modify = X - C
                 if (x - c > a) {
                     totalSum += (x - c);
                 } else {
                     totalSum += a;
                 }
             }
-            
             System.out.println(totalSum);
         }
-        
         scanner.close();
     }
 }
