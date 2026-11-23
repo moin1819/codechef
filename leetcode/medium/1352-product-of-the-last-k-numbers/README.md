@@ -57,23 +57,18 @@ productOfNumbers.getProduct(2); // return 32. The product of the last 2 numbers 
 ## Solution
 
 **Language:** Java  
-**Runtime:** 17 ms (beats 94.46%)  
-**Memory:** 84.7 MB (beats 33.91%)  
-**Submitted:** 2026-11-23T08:30:19.306Z  
+**Runtime:** 18 ms (beats 70.76%)  
+**Memory:** 84.5 MB (beats 37.89%)  
+**Submitted:** 2026-11-23T08:30:40.404Z  
 
 ```java
-
 import java.util.*;
-
 class ProductOfNumbers {
-
     List<Integer> prefix;
-
     public ProductOfNumbers() {
         prefix = new ArrayList<>();
         prefix.add(1);
     }
-
     public void add(int num) {
         if (num == 0) {
             prefix.clear();
@@ -83,14 +78,11 @@ class ProductOfNumbers {
             prefix.add(last * num);
         }
     }
-
     public int getProduct(int k) {
         int n = prefix.size();
-
         if (k >= n) {
             return 0;
         }
-
         return prefix.get(n - 1) / prefix.get(n - k - 1);
     }
 }
