@@ -20,7 +20,7 @@ Return the  **maximum total number of item copies**  you can obtain, including b
  
 
 Original
-C++
+Java
  **Example 1:** 
 
  **Input:**  items = [[1,6],[2,4],[3,5]], budget = 19
@@ -61,77 +61,49 @@ C++
 
 ## Solution
 
-**Language:** C++  
-**Runtime:** 126 ms (beats 49.00%)  
-**Memory:** 275.3 MB (beats 82.00%)  
-**Submitted:** 2026-11-28T07:56:45.179Z  
+**Language:** Java  
+**Runtime:** 66 ms (beats 32.65%)  
+**Memory:** 221.4 MB (beats 87.76%)  
+**Submitted:** 2026-11-28T08:02:03.231Z  
 
-```cpp
-
+```java
 class Solution {
-public:
-    long long maximumSaleItems(vector<vector<int>>& items, int budget) {
-        int n = items.size();
-
-        // Count frequency of each factor
-        vector<int> freq(n + 1, 0);
-
-        for (auto &item : items) {
-            freq[item[0]]++;
-        }
-
-        // Count how many items each factor can provide for free
-        vector<int> cnt(n + 1, 0);
-
-        for (int i = 1; i <= n; i++) {
-            for (int j = i; j <= n; j += i) {
-                cnt[i] += freq[j];
+    int minPrice;
+    public int maximumSaleItems(int[][] items, int budget) {
+        int n = items.length;
+        int maxFac = 0;
+        for (var item : items)
+            maxFac = Math.max(maxFac, item[0]);
+        int[] fre = new int[maxFac + 1];
+        for (var item: items)
+            fre[item[0]]++;
+        for (int i = 1; i<=maxFac; i++) {
+            if (fre[i] > 0) {
+                for (int j = i*2; j<=maxFac; j+=i) {
+                    fre[i] += fre[j];
+                }
             }
         }
+        
+        Arrays.sort(items, (a,b) -> Integer.compare(a[1],b[1]));
+        minPrice = items[0][1];
 
-        // Find minimum price
-        long long minPrice = LLONG_MAX;
-
-        for (auto &item : items) {
-            minPrice = min(minPrice, (long long)item[1]);
-        }
-
-        // Sort items by price
-        sort(items.begin(), items.end(),
-             [](const vector<int>& a, const vector<int>& b) {
-                 return a[1] < b[1];
-             });
-
-        long long ans = 0;
-        long long remaining = budget;
-
-        // Purchase bonus copies first
-        for (auto &item : items) {
-            long long factor = item[0];
-            long long price = item[1];
-
-            // Bonus copies are not beneficial beyond this price
-            if (price >= 2 * minPrice) {
+        int ans = 0;
+        for (int i = 0; i<n; i++) {
+            int price = items[i][1];
+            // subtract copy of itself
+            int copy = fre[items[i][0]] - 1;
+            if (price - minPrice > minPrice)
                 break;
-            }
 
-            // Exclude the item itself
-            long long freeCount = cnt[factor] - 1;
-
-            // Maximum bonus copies we can afford
-            long long take = min(freeCount, remaining / price);
-
-            ans += 2 * take;
-            remaining -= take * price;
+            int take = Math.min(copy, budget/price);
+            ans += (take * 2);
+            budget -= (take * price);
         }
-
-        // Spend the remaining budget on the cheapest item
-        ans += remaining / minPrice;
-
+        ans += (budget/minPrice);
         return ans;
     }
-};
-
+}
 ```
 
 ---
